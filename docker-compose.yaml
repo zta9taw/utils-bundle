@@ -1,0 +1,10 @@
+version: "3.8"
+
+services:
+    php:
+        container_name: utils_bundle_php
+        build:
+            context: ./docker/php
+        volumes:
+            - ./:/var/www
+        user: "${UID}:${GID}"

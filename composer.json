@@ -1,0 +1,56 @@
+{
+    "name": "zta9taw/utils-bundle",
+    "description": "Useful functionality for a symfony application.",
+    "minimum-stability": "stable",
+    "license": "proprietary",
+    "type": "symfony-bundle",
+    "prefer-stable": true,
+    "keywords": [
+        "bundle",
+        "zta9taw",
+        "utils"
+    ],
+    "authors": [
+        {
+            "name": "abdelhak",
+            "email": "abdelhak.freelance@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=8.1",
+        "symfony/framework-bundle": "^6.0",
+        "symfony/security-bundle": "^6.0",
+        "symfony/orm-pack": "*",
+        "symfony/polyfill-uuid": "*",
+        "knplabs/knp-paginator-bundle": "^5.9"
+    },
+    "require-dev": {
+        "squizlabs/php_codesniffer": "^3.7",
+        "phpunit/phpunit": "*",
+        "symfony/phpunit-bridge": "^6.0"
+    },
+    "autoload": {
+        "exclude-from-classmap": [
+            "Tests/"
+        ],
+        "psr-4": {
+            "Zta9taw\\Bundle\\UtilsBundle\\": ""
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Zta9taw\\Bundle\\UtilsBundle\\Tests\\": "Tests"
+        }
+    },
+    "config": {
+        "bin-dir": "bin",
+        "platform": {
+            "php": "8.1"
+        }
+    },
+    "extra": {
+        "symfony": {
+            "allow-contrib": false
+        }
+    }
+}
