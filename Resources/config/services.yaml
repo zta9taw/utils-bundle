@@ -18,5 +18,5 @@ services:
         exclude: '../../{DependencyInjection,Entity,Tests,UtilsBundle.php}'
 
     Zta9taw\Bundle\UtilsBundle\EventListener\Doctrine\:
-        resource: '../../src/EventListener/Doctrine'
+        resource: '../../EventListener/Doctrine'
         tags: ['doctrine.orm.entity_listener']
