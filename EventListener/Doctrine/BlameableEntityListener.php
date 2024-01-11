@@ -6,7 +6,7 @@ namespace Zta9taw\Bundle\UtilsBundle\EventListener\Doctrine;
 
 use Zta9taw\Bundle\UtilsBundle\Entity\BlameableEntityInterface;
 use Symfony\Component\Security\Core\User\UserInterface;
-use Symfony\Component\Security\Core\Security;
+use Symfony\Bundle\SecurityBundle\Security;
 
 class BlameableEntityListener
 {

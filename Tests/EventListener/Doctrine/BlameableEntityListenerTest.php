@@ -5,7 +5,7 @@ declare(strict_types=1);
 namespace Zta9taw\Bundle\UtilsBundle\Tests\EventListener\Doctrine;
 
 use PHPUnit\Framework\TestCase;
-use Symfony\Component\Security\Core\Security;
+use Symfony\Bundle\SecurityBundle\Security;
 use Symfony\Component\Security\Core\User\UserInterface;
 use Zta9taw\Bundle\UtilsBundle\Entity\BlameableEntityInterface;
 use Zta9taw\Bundle\UtilsBundle\EventListener\Doctrine\BlameableEntityListener;
