@@ -17,9 +17,9 @@
         }
     ],
     "require": {
-        "php": ">=8.2",
-        "symfony/framework-bundle": "^7.0",
-        "symfony/security-bundle": "^7.0",
+        "php": ">=8.1",
+        "symfony/framework-bundle": "^7.0|^6.0",
+        "symfony/security-bundle": "^7.0|^6.0",
         "symfony/orm-pack": "*",
         "symfony/polyfill-uuid": "*",
         "knplabs/knp-paginator-bundle": "^6.0"
@@ -44,7 +44,7 @@
     "config": {
         "bin-dir": "bin",
         "platform": {
-            "php": "8.2"
+            "php": "8.1"
         }
     },
     "extra": {

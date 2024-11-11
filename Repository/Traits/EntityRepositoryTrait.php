@@ -121,14 +121,16 @@ trait EntityRepositoryTrait
 
     private function isSupportedObject(EntityInterface $entity): bool
     {
-        return $entity instanceof $this->_entityName;
+        $entityName = $this->getEntityName();
+
+        return $entity instanceof $entityName;
     }
 
     private function throwObjectNotSupportedException(EntityInterface $entity): void
     {
         throw new InvalidArgumentException(sprintf(
             'Unsupported object type, it must be an instance of (%s), %s given',
-            $this->_entityName,
+            $this->getEntityName(),
             get_class($entity)
         ));
     }

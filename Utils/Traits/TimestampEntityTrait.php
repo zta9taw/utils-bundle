@@ -10,11 +10,11 @@ use Doctrine\ORM\Mapping as ORM;
 trait TimestampEntityTrait
 {
 
-    #[ORM\Column(type: 'datetimetz')]
+    #[ORM\Column(type: 'datetime')]
     protected DateTimeInterface $createdAt;
 
 
-    #[ORM\Column(type: 'datetimetz', nullable: true)]
+    #[ORM\Column(type: 'datetime', nullable: true)]
     protected ?DateTimeInterface $updatedAt = null;
 
     public function getCreatedAt(): DateTimeInterface
